@@ -64,8 +64,26 @@ and [ccurl](https://github.com/iotaledger/ccurl.git), and override the iota.api.
   var iotaProxy = require('./lib/iotaproxy.js');
   iotaProxy.start(
     {
+<<<<<<< HEAD
       host: 'http://iota.bitfinex.com',
       port: 80,
+=======
+      host: 'iota.bitfinex.com',
+      port: 80,
+      protocol: "http:",
+      localPort: 14265,
+      overrideAttachToTangle: true
+    }
+  );
+  ```
+
+  or by using the provider setting:
+  ```
+  var iotaProxy = require('./lib/iotaproxy.js');
+  iotaProxy.start(
+    {
+      provider: "https://field.carriota.com:443",
+>>>>>>> https-provider
       localPort: 14265,
       overrideAttachToTangle: true
     }
