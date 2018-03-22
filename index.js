@@ -13,7 +13,7 @@ iotaProxy.start(
   {
     // if provider is absent the host, port and protocol values will be used
     // with sensible defaults
-    provider: '', // in the format "https://field.carriota.com:443"
+    provider: 'https://field.carriota.com', // in the format "https://field.carriota.com:443"
     host: 'iota.bitfinex.com', // the remote iri hostname
     port: 80, // the port the remote iri is litening on
     protocol: 'http:',
